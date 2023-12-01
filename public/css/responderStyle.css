@@ -1,0 +1,229 @@
+body {
+    overflow: hidden;
+}
+
+/* NAVIGATION BAR */
+.top-nav {
+    background-color: #002B5B;
+    height: 7.5%;
+    justify-content: right;
+    position: relative;
+    z-index: 999;
+} 
+
+.top-nav i {
+    padding: 7px;
+    color: #fff;
+}
+
+.top-nav i:hover {
+    color: #F99417;
+    transition: .4s ease-out;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-login {
+    border-left: 1px solid #828282;
+}
+
+/* BANNER AREA */
+.banner-area {
+    position: relative;
+    width: 80%;
+    top: -55px;
+    z-index: 999;
+}
+
+.banner-area img {
+    width: 100%; 
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .banner-area img {
+        width: 50%;
+    }
+}
+
+/* Styling for the cover photo with a background image. */
+.cover-photo {
+    background-image: url(../image/FireSafety.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    width: 100%;
+    height: 60vh; /* Adjust the height as needed */
+}
+
+.cover-photo a {
+    text-decoration: none;
+    color: #002B5B;
+}
+
+@media (min-width: 426px) and (max-width: 575px) {
+    .cover-photo {
+        margin-top: 15px;
+    }
+}
+
+
+/* Additional styles for larger screens */
+@media (min-width: 768px) {
+    .cover-photo {
+        height: 70vh; /* Adjust the height as needed */
+    }
+}
+
+@media (min-width: 992px) {
+    .cover-photo {
+        height: 80vh; /* Adjust the height as needed */
+    }
+}
+
+@media (min-width: 1200px) {
+    .cover-photo {
+        height: 90vh; /* Adjust the height as needed */
+    }
+}
+
+.view-map-button {
+    background-color: #eaa602;
+    color: #002B5B;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 280px;
+    margin-left: 40%;
+}
+
+@media (max-width: 425px) {
+    .view-map-button {
+        font-size: 14px;
+        margin-top: 120px;
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 575px) {
+    .view-map-button {
+        font-size: 14px;
+        margin-top: 120px;
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .view-map-button {
+        font-size: 16px;
+        margin-top: 150px;
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .view-map-button {
+        font-size: 18px;
+        margin-top: 180px;
+        margin-left: 30%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .view-map-button {
+        font-size: 20px;
+        margin-top: 250px;
+        margin-left: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .view-map-button {
+        font-size: 20px;
+        margin-top: 280px;
+        margin-left: 40%;
+    }
+}
+
+/* Hover effect for the "View Map" button. */
+.view-map-button:hover {
+    background-color: #eaa602;
+    color: white;
+}
+
+/* Styling for a modal dialog. */
+.modal {
+    top: 32%;
+    left: 80%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    background: #002B5B;
+}
+
+/* Styling for the content within the modal. */
+.profile-content {
+    position: relative;
+    background: #eaa602;
+    color: #000;
+    height: 100%;
+    right: 10px;
+}
+
+.profile-content h2{
+    font-weight: 300;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.profile-table {
+    margin-left: 18px;
+}
+
+.profile-table table{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.profile-table td {
+    padding: 10px;    
+}
+
+.close {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.user-dropdown-menu a {
+    color: #fff;
+}
+
+.user-dropdown-menu a:hover {
+    background-color: #eaa602;
+    color: #fff;
+    transition: .3s ease-out;
+}
+
+.user-dropdown-menu {
+    background-color: #002b5b;
+    color: #fff;
+    padding: 10px;
+    z-index: 5;
+}

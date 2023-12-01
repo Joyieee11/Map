@@ -1,0 +1,172 @@
+/* NAVIGATION BAR */
+.top-nav {
+    background-color: #002B5B;
+    height: 7.5%;
+    justify-content: right;
+    position: relative;
+    z-index: 999;
+}
+
+.top-nav i {
+    padding: 7px;
+    color: #fff;
+}
+
+.top-nav i:hover {
+    color: #F99417;
+    transition: .4s ease-out;
+}
+
+.icons-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-login {
+    border-left: 1px solid #828282;
+}
+
+/* BANNER AREA */
+.banner-area {
+    position: relative;
+    width: 80%;
+    top: -55px;
+    z-index: 999;
+}
+
+.banner-area img {
+    width: 100%; 
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .banner-area img {
+        width: 50%;
+    }
+}
+
+/* CAROUSEL */
+.carousel {
+    width: 100%;
+    height: 50vh; 
+    position: absolute;
+    top: 50;
+    left: 0;
+}
+
+.carousel img {
+    height: 100%;    
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-indicators li {
+    background-color: #F99417;
+}
+
+/* HOME */
+#home {
+    height: 50%;
+    margin-top: -20px;
+}
+
+/* ABOUT */
+#about {
+    background-image: url(../image/bg-about.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 39%;
+    width: 100%;
+    position: relative;
+    top: -65;
+    bottom: 0;
+}
+
+.about-content p {
+    font-size: 13.5px;
+}
+
+.about-content h4 {
+    font-size: 20px;
+}
+
+.map-wrapper{
+    height: 50%; 
+    width: 100%;
+}
+
+.map-wrapper img {
+    height: 50%;
+}
+
+.map-overlay {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    right: -20; 
+    transform: translateY(-50%);
+    transition: 0.3s ease-out;
+}
+
+.map-overlay a {
+    position: relative;
+    top: 50%;
+    background-color: #F99417;
+    color: #002B5B;
+    border: none;
+}
+
+.map-overlay a:hover {
+    background-color: #002B5B;
+    color: #F99417;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-toggle {
+    position: absolute;
+    top: 500;
+    left: 450;
+    background-color: #002B5B;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+#check {
+    visibility: hidden;
+    display: none;
+}
+
+.info-sidebar {
+    width: 350px; 
+    background-color: #002B5B;
+    color: #fff;
+    position: fixed;
+    top: 50;
+    left: -350px; 
+}
+
+#map {
+    top: -10;
+}
+
+#close-map {    
+    top: 50;
+}
+
+.leaflet-control-zoom {
+    top: 80;
+}

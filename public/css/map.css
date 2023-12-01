@@ -1,0 +1,83 @@
+/*MAP CSS*/
+.map-section {
+    display: flex;
+    margin-top: -115px;
+}
+
+.info-sidebar {
+    position: fixed;
+    height: 100%;
+    overflow-y: auto; 
+    transition: left 0.3s ease-in-out;
+    text-align: center;
+}
+
+.info-sidebar h3 {
+    margin-top: 50px;
+}
+
+.info-sidebar h4 {
+    margin-top: 30px;
+    margin-left: -70px;
+}
+
+.info-content {
+    padding: 20px; 
+    text-align: left;
+    font-size: 18px;
+}
+
+.info-content table {
+    color: #fff;
+}
+
+.close-arrow {
+    position: absolute;
+    top: 55%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #eaa60e;
+    transition: left 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s; 
+}
+
+.arrow-open {
+    left: calc(25%);
+    margin-left: 5px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.info-container {
+    width: 35%;
+}
+
+#map {
+    height: 100vh;
+    width: 80%;
+}
+
+#close-map {    
+    position: absolute;
+    z-index: 1000;
+    font-size: 12px;
+    background-color: #002B5B;
+    border: none;
+    transition: 0.3s ease-out;
+}
+
+#close-map:hover {
+    background-color: #eaa60e;
+    color: #002B5B;
+}
+
+.close-map-btn {
+    position: absolute;
+    top: 0;
+    left: 10;
+    z-index: 1000;
+}
+
+.info-container h3 {
+    padding: 30px;
+}

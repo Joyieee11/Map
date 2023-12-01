@@ -1,0 +1,493 @@
+body {
+    overflow: hidden;
+}
+
+.top-nav {
+    background-color: #002b5b;
+    justify-content: space-between;
+}
+
+.top-nav i {
+    color: #fff;
+}
+
+.top-nav i:hover {
+    color: #eaa602;
+    transition: .4s ease-out;
+}
+
+.logout-link {
+    color: #002b5b;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.logout-link i {
+    margin-right: 5px;
+}
+
+#notification-icon, #user-icon {
+    color: #002B5B;
+}
+
+.notification-dropdown {
+    background-color: #002B5B;
+}
+
+.notification-dropdown button {
+    background-color: transparent;
+    color: #eaa602;
+}
+
+.user-dropdown-menu a:hover, 
+.notification-dropdown button:hover{
+    background-color: #eaa602;
+    color: #fff;
+    transition: .3s ease-out;
+}
+
+@media (min-width: 992px) {
+    body {
+      padding-top: 0;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    #menu-toggle i:before {
+      content: '\f0c9'; /* Unicode character for fa-bars */
+    }
+}
+
+ #wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #002b5b !important;
+    color: #fff;
+    padding-top: 56px;
+    transition: 0.3s;
+}
+
+#dashboard-link,
+#manage-link,
+#report-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#manage-link i {
+    margin-left: 8px;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #eaa602;
+    color: white;
+}
+
+#content {
+    margin-left: 250px;
+    transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+    #sidebar {
+      left: -250px;
+    }
+
+    #sidebar.show {
+      left: 0;
+    }
+
+    #content {
+      margin-left: 0;
+    }
+
+    #menu-toggle {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    #menu-toggle i:before {
+      content: '\f0c9'; /* Unicode character for fa-bars */
+    }
+
+    #dismiss {
+      display: block;
+    }
+
+    #exit-sidebar-btn {
+      display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    #exit-sidebar-btn i{
+        display: none;
+    }
+}
+
+#dismiss, #exit-sidebar-btn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+#exit-sidebar-btn:hover{
+    background-color: transparent;
+}
+
+#exit-sidebar-btn i:hover {
+    color: #fff;
+    transition: .3s ease-out;
+}
+
+.logo-img {
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+}
+
+#notification-icon, 
+#user-icon, 
+.user-dropdown-menu a,
+.notification-dropdown button {
+    color: white;
+}
+
+.notification-dropdown, .user-dropdown-menu {
+    background-color: #002b5b;
+    color: white;
+    padding: 10px;
+    z-index: 5;
+}
+
+#dashboard-link.active,
+#maintenance-link.active,
+#hydrant-link.active,
+#hydrant-link-info.active,
+#maintenance-link-info.active,
+#report-link.active {
+    background-color: #002b5b;
+    color: #eaa602; 
+}
+
+.dropdown-item{
+    color: white; 
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #eaa602;
+    color: #002b5b; 
+    transition: 0.3s;
+}
+
+.btn-outline-secondary {
+    background-color: #eaa602;
+    color: #002b5b;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #002b5b;
+    color: #eaa602;
+}
+
+#hydrant-dropdown {
+    background-color: #002b5b;
+    z-index: 1000;
+    position: absolute;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 15px;
+    z-index: 1;
+}
+
+/* Default z-index for the sidebar */
+#sidebar {
+    z-index: 1000; /* Adjust the value as needed */
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+    #sidebar {
+        z-index: 2000; /* Higher z-index for mobile view */
+    }
+}
+
+
+/* Style for the "Create Report" button */
+.btn-create-report {
+    background-color: #002b5b !important; 
+    color: white;
+   
+   
+}
+
+/* Hover effect for the button */
+.btn-create-report:hover {
+    background-color: #eaa602 !important; /* Background color */
+    color: #002b5b;
+}
+
+/* Style for the table header */
+.thead-custom {
+    background-color: #002b5b; /* Background color */
+    color: white; /* Text color */
+}
+
+.btn-custom {
+    background-color: #eaa602; /* Background color */
+    color: black; /* Text color */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    font-size: 14px;
+}
+
+/* Hover effect for the button */
+.btn-custom:hover {
+    background-color: #002b5b; /* Darker background color on hover */
+    color: white; /* Text color on hover */
+}
+
+
+/* Style for the container */
+#hydrant-status-container {
+    background-color: #eaa602; 
+    color: #002b5b; 
+    padding: 20px; 
+    border-radius: 8px; 
+    height: 500px;
+}
+
+/* Style for the "HYDRANT DETAILS" heading */
+#hydrant-status-container h2 {
+    color:#002b5b; 
+}
+
+/* Style for the paragraph inside the container */
+#hydrant-status-container p {
+    color: black; 
+}
+
+/* Style for the "Download" button */
+#hydrant-status-container .btn-custom {
+    background-color: #002b5b; 
+    color: white;
+    border: 1px solid #eaa602; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect for the button */
+#hydrant-status-container .btn-custom:hover {
+    background-color: #d18e00; 
+    color: #002b5b; 
+}
+
+/* Style for the table header cells */
+thead th {
+    padding: 10px; 
+    border: 1px solid #eaa602; 
+    background-color: #002b5b !important; 
+    color: white;
+}
+
+.action-buttons button {
+    background-color: #eaa602; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid #eaa602; /* Button border color */
+    padding: 5px 10px; /* Adjust padding for spacing */
+    margin: 0 5px; /* Adjust margin for spacing between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the buttons */
+.action-buttons button:hover {
+    background-color: #002b5b; 
+    color: white; 
+}
+
+.main-content {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    margin: 5em auto;
+    display: flex;
+    background-color: #eaa602;
+  }
+
+  .company__info {
+    background-color: #002B5B;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 25%;
+  }
+
+  .company__logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+  }
+
+  .company__logo img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  @media screen and (max-width: 640px) {
+    .main-content {
+      width: 90%;
+    }
+
+    .company__info {
+      display: none;
+    }
+
+    .create_form {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
+
+  @media screen and (min-width: 642px) and (max-width: 800px) {
+    .main-content {
+      width: 70%;
+    }
+  }
+
+  .row > h2 {
+    color: #002B5B;
+    margin-left: 2%;
+  }
+
+  .create_form {
+    padding: 30px;
+    background-color: #FFF0F5;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: 10px solid #002B5B;
+  }
+
+  form {
+    padding: 0 2em;
+  }
+
+ 
+  .form__input {
+      width: 90%;
+      height: 50px;
+      border: 0px solid transparent;
+      border-radius: 0;
+      border-bottom: 1px solid #002B5B;
+      padding: 10px;
+      outline: none;
+      margin: 1.5em auto;
+      transition: all .5s ease;
+  }
+
+      
+  .form__input:focus {
+      border-bottom-color: #002B5B;
+      box-shadow: 0 0 5px rgba(0, 80, 80, .4);
+      border-radius: 1px;
+  }
+
+  .form__submit-btn {
+    width: 100%;
+    border-radius: 3px;
+    height: 50%;
+    color: white;
+    background-color: #002B5B;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 14px;
+}
+
+
+#createAccountModal .modal-dialog {
+    max-width: 100%;
+}
+
+
+.cover-photo {
+    background-image: url(../image/FireSafety.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    width: 100%;
+    height: 48vh; /* Adjust the height as needed */
+}
+
+.cover-photo a {
+    text-decoration: none;
+    color: #002B5B;
+}
+
+.profile-content {
+    position: relative;
+    background: #eaa602;
+    color: #000;
+    height: 100%;
+    right: 10px;
+}
+
+.profile-content h2{
+    font-weight: 300;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.profile-table {
+    margin-left: 18px;
+}
+
+.profile-table table{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.profile-table td {
+    padding: 10px;    
+}
+
+.close {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    cursor: pointer;
+}
